@@ -1,0 +1,327 @@
+\documentclass[a4paper]{syllabus}
+%%%%%%%%%%%%%%Bibliography%%%%%%%%%%%%%%%%%%%%%
+\usepackage[sorting=none, backend=biber,style=ieee]{biblatex}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{textcase}
+% If backend is set to bibtex, then configure texmaker Bi(La)Tex with "bibtex %"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ismaindoc}{true}
+\standalonefalse
+\renewcommand{\arraystretch}{1.5}
+%\schemeYear{2025}
+\department[CV]{Civil Engineering}
+\schemeYear[PG]{2026}
+\DegreeCourse[M.Tech.]{Structural Engineering}
+
+% Uncoment the below line to insert the flow chart
+%\renewcommand{\aftertables}{\input{FlowChartInsert}}
+\begin{document}
+	%%%% You can modify the credit %%%%
+	\input{CreditDefinitions}
+	%%%% You can enter the data in the appropriate commands %%%%
+	%%%% FrontCover, Abbreviations, WKs, POs, and BackCover are now
+	%%%% inserted automatically by the class (see syllabus.cls) %%%%
+
+
+
+%%%%%%===============Semester 1========================
+	
+	\begin{semester}{1}
+%		\begin{definecourse}{MMA211TA}
+%			\category{PC}
+%			\commonto{Common to MBT, MHT, MMD, MPD, MST}
+%			\bos{MA}
+%			\coursetitle[LT]{Applied Mathematics}
+%		\end{definecourse}
+		\begin{definecourse}{MMA211TB}
+			\category{PC}
+			\commonto{Common to MDC, MCE, MCN, MPE, MSE, MIT}
+			\bos{MA}
+			\coursetitle[LT]{LINEAR ALGEBRA AND PROBABILITY THEORY}
+		\end{definecourse}
+		\begin{definecourse}{S1C2}
+		\category{PC}
+		\bos{CV}
+		\coursetitle[LP]{Professional Core Course with Integrated Lab}
+		\end{definecourse}
+		\begin{definecourse}{S1C3}
+		\category{PC}
+		\bos{CV}
+		\coursetitle[LP]{Professional Core Course with Integrated Lab}
+		\end{definecourse}
+		\begin{definecourse}{S1C4}
+		\category{PC}
+		\bos{CV}
+		\coursetitle[LT]{Professional Core Course}
+		\end{definecourse}
+		
+		
+		\begin{electivegroup}{CS248ATX}{Professional Electives}{A}
+		\begin{definecourse}{S1C5a}
+		\category{PE}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group A1}
+		\end{definecourse}
+		\begin{definecourse}{S1C5b}
+		\category{PE}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group A2}
+		\end{definecourse}
+		\begin{definecourse}{S1C5c}
+		\category{PE}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group A3}
+		\end{definecourse}
+		\begin{definecourse}{S1C5c}
+			\category{PE}
+			\bos{CV}
+			\coursetitle[LO]{Professional Elective Group A3}
+		\end{definecourse}
+		\end{electivegroup}
+		
+%		\begin{definecourse}{MCS216TA}
+%		\category{ET}
+%		\bos{CS}
+%		\commonto{Commont to Non-Circuit Programs– MHT, MST, MPD, MBT, MMD}
+%		\coursetitle[LOb]{Fundamentals of \NoCaseChange{AI} for Engineer}
+%		\end{definecourse}		
+		\begin{definecourse}{MCS216TB}
+		\category{ET}
+		\bos{CS}
+		\commonto{Commont to Circuit Programs–MCS, MCE, MVE, MPE, MDC, MSE, MIT}
+		\coursetitle[LOb]{\NoCaseChange{AI} for Engineer}
+		\end{definecourse}
+		\begin{definecourse}{HSS217TA}
+		\category{HSS}
+		\commonto{Common to All Programs}
+		\bos{HS}
+		\coursetitle[LOc]{INTELLECTUAL PROPERTY RIGHTS}
+		\end{definecourse}
+		\begin{definecourse}{HSS116EL}
+		\category{HS}
+		\commonto{Common to All Programs}
+		\bos{HSS}
+		\coursetitle[POb]{Technical English (Online)}
+		\end{definecourse}
+%%%%%%===============Semester 2========================
+	\end{semester}
+	\begin{semester}{2}
+		\begin{definecourse}{S2C1}
+			\category{PC}
+			%\commonto{Common to CS and CY}
+			\bos{CV}
+			\coursetitle[LP]{Professional Core Course with Integrated Lab}
+		\end{definecourse}
+		\begin{definecourse}{S2C2}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LP]{Professional Core Course with Integrated Lab}
+		\end{definecourse}
+		\begin{definecourse}{S2C3}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LT]{Professional Core Course}
+		\end{definecourse}
+		
+		\begin{electivegroup}{XXXXXX}{Professional Electives}{B}
+		\begin{definecourse}{S2C4a}
+		\category{PE}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group B1}
+		\end{definecourse}
+		
+		\begin{definecourse}{S2C4b}
+		\category{PE}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group B2}
+		\end{definecourse}
+		
+		\begin{definecourse}{S2C4c}
+		\category{PE}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group B3}
+		\end{definecourse}
+		
+		\end{electivegroup}
+	 	
+	 	
+		
+	\begin{electivegroup}{XXX325DX}{Interdisciplinary Elective Course}{A}
+	\begin{definecourse}{MBT325DA}
+		\category{IEC}
+		%\commonto{Common to CS and CY}
+		\bos{BT}
+		\coursetitle[LO]{Nature Impelled Engineering}
+	\end{definecourse}	
+	\begin{definecourse}{MBT325DB}
+		\category{IEC}
+		%\commonto{Common to CS and CY}
+		\bos{BT}
+		\coursetitle[LO]{Clinical Data Management}
+	\end{definecourse}
+	\begin{definecourse}{MCN325DR}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{CS}
+	\coursetitle[LO]{Cloud Computing}
+	\end{definecourse}
+	\begin{definecourse}{MCV325DS}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{CV}
+	\coursetitle[LO]{Structural Diagnostics, Repair and Retrofitting Techniques}
+	\end{definecourse}
+	\begin{definecourse}{MCV325DT}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{CV}
+	\coursetitle[LO]{Smart Mobility SYSTEMS}
+	\end{definecourse}
+	\begin{definecourse}{MEC325DF}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{EC}
+	\coursetitle[LO]{Human Machine Interface (\NoCaseChange{HMI})}
+	\end{definecourse}
+	\begin{definecourse}{MEE325DG}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{EE}
+	\coursetitle[LO]{Electric Vehicle Technology}
+	\end{definecourse}
+	\begin{definecourse}{MET325DH}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{ET}
+	\coursetitle[LO]{Electronic Navigation Systems}
+	\end{definecourse}
+	\begin{definecourse}{MIM325DK}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{IM}
+	\coursetitle[LO]{Essentials of Project Management}
+	\end{definecourse}
+	\begin{definecourse}{MIS325DM}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{IS}
+	\coursetitle[LO]{User Interface \& User Experience}
+	\end{definecourse}
+	\begin{definecourse}{MMA325DN}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{MA}
+	\coursetitle[LO]{Mathematical Methods for Data Science}
+	\end{definecourse}
+	\begin{definecourse}{MME325DU}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{ME}
+	\coursetitle[LO]{Creative Engineering}
+	\end{definecourse}
+	\begin{definecourse}{MME325DV}
+	\category{IEC}
+	%\commonto{Common to CS and CY}
+	\bos{ME}
+	\coursetitle[LO]{Industry 5.0 - Human-Centric, Sustainable and Resilient Manufacturing}
+	\end{definecourse}
+	
+	\end{electivegroup}
+
+
+		\begin{definecourse}{MIM426RT}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{IM}
+		\coursetitle[NPTELRM]{Research Methodology \NoCaseChange{(MooC)}}
+		\end{definecourse}
+		\begin{definecourse}{HSS227TA}
+		\category{HS}
+		\commonto{Common to All Programs}
+		\bos{HSS}
+		\coursetitle[LOc]{Environment and Sustainability}
+		\end{definecourse}
+	\end{semester}
+
+%%%%%%===============Semester 3========================
+	\begin{semester}{3}
+		\begin{definecourse}{S3C1}
+			\category{PC}
+			%\commonto{Common to CS and CY}
+			\bos{CV}
+			\coursetitle[LT]{Professional Core Course}
+		\end{definecourse}
+
+		\begin{electivegroup}{XXXXXXX}{Professional Electives}{C}
+		\begin{definecourse}{S3C2}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[LO]{Professional Elective Group C}
+		\end{definecourse}
+		
+		
+		
+		\end{electivegroup}
+		
+		
+		\begin{electivegroup}{XXXXXXX}{Professional Electives}{D (MooC)}
+		\begin{definecourse}{S3C3}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[NPTEL]{Professional Elective Group D}
+		\end{definecourse}
+		
+		
+		
+		\end{electivegroup}
+	
+	
+		\begin{definecourse}{XXX434P}
+		\category{Minor Project}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[Proj]{Minor Project}
+		\end{definecourse}
+		\begin{definecourse}{XXX435N}
+		\category{PC}
+		%\commonto{Common to CS and CY}
+		\bos{CV}
+		\coursetitle[ProjInt]{Industry Internship/Research Internship/ Projects in CoEs}
+		\end{definecourse}
+		
+	\end{semester}
+	
+
+%%%%%%===============Semester 4========================
+	\begin{semester}{4}
+		\begin{electivegroup}{XXXXXXX}{Professional Electives}{E (MooC)}
+		\begin{definecourse}{S4C1}
+			\category{PC}
+%			\commonto{Common to Common to CS and CY Programs}
+			\bos{CV}
+			\coursetitle[NPTEL]{Professional Elective Course-E (Online)}
+		\end{definecourse}
+		
+		
+		
+		\end{electivegroup}
+		
+		\begin{definecourse}{XXX442PA}
+			\category{PC}
+%			\commonto{Common to Common to CS and CY Programs}
+			\bos{CV}
+			\coursetitle[ProjMaj]{Major Project}
+		\end{definecourse}
+		
+	\end{semester}
+
+
+\end{document}
