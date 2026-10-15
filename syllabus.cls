@@ -2788,6 +2788,7 @@
 \schemetablestartedfalse
 \newif\ifschemefooterpending
 \schemefooterpendingfalse
+\newcounter{idx@tblctr}
 \gdef\hasaudit{0}
 
 % --- Prints the college logo block. Called once per PAGE (not once per
@@ -2868,17 +2869,13 @@
 	\renewcommand{\thefootnote}{\ensuremath{\star}}% 
 	
 	\pagestyle{fancy} %
+	\stepcounter{idx@tblctr}%
 	\ifschemetablestarted
-		% Not the first semester's scheme table: fit it on the current page
-		% if there's room for it, otherwise move to a fresh page. The
-		% estimate is roughly 1 line of overhead (title/header rows) per
-		% course row, plus a fixed overhead for the logo block and column
-		% headers. Compared directly against remaining page space rather
-		% than via \needspace, which can misjudge the space right before
-		% a longtable.
-		\edef\schemeneededlines{\number\numexpr 10+1*#1\relax}%
-		\ifdim\dimexpr\pagegoal-\pagetotal\relax<\schemeneededlines\baselineskip
-			% Doesn't fit: flush the outgoing page's footer (Note/audit/
+		% Not the first semester's scheme table: semesters are paired two
+		% per page (1&2, 3&4, ...). An odd-numbered table starts a fresh
+		% page; an even-numbered table continues on the current page.
+		\ifodd\value{idx@tblctr}
+			% New pair: flush the outgoing page's footer (Note/audit/
 			% instruction block) before leaving it, then start fresh.
 			\schemefooterflush
 			\clearpage
