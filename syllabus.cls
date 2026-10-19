@@ -595,6 +595,11 @@
 		\def\emptyVal{}%
 		\ifx\temp@bos\emptyVal \@ifundefined{@departmentSF}{\def\safe@bos{ECE}}{\edef\safe@bos{\@departmentSF}}\else\edef\safe@bos{\temp@bos}\fi
 		\immediate\write\@mainaux{\string\global\string\@namedef{course@sem\sem @\romannumeral\value{numof@courses}@cg@boses}{\safe@bos}}%
+		% IEC groups draw courses from many BoS, so the group row shows XX
+		\def\@iec@cat{IEC}%
+		\ifx\temp@category\@iec@cat
+		\immediate\write\@mainaux{\string\global\string\@namedef{course@sem\sem @\romannumeral\value{numof@courses}@cg@boses}{XX}}%
+		\fi
 		\fi
 		\else
 		
